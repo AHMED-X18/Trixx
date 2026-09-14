@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #FF7A00; } a:hover { color: #E85D00; }
+    .frame {
+      width: 390px; height: 844px; position: relative; overflow: hidden;
+      border-radius: 32px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #FFFBF7; color: #171717;
+    }
+    input, textarea { font-family: inherit; }
+    input::placeholder, textarea::placeholder { color:#A8A8A8; }
+    .field-label { font-size:12px; font-weight:700; color:#171717; margin-bottom:8px; }
+    .chip { font-size:13px; font-weight:600; border-radius:999px; padding:10px 0; text-align:center; flex:1; border:1px solid #EAEAEA; background:#FFFFFF; color:#6B6B6B; }
+  </style>
+</helmet>
+
+<div class="frame">
+  <!-- top bar -->
+  <div style="padding:24px 20px 0; display:flex; align-items:center; justify-content:space-between;">
+    <div style="width:38px; height:38px; border-radius:11px; background:#FFFFFF; border:1px solid #EAEAEA; display:flex; align-items:center; justify-content:center;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </div>
+    <div style="font-size:15px; font-weight:700;">Nouvelle tâche</div>
+    <div style="font-size:14px; font-weight:700; color:#FF7A00;">Enregistrer</div>
+  </div>
+
+  <div style="padding:22px 20px 0; display:flex; flex-direction:column; gap:18px;">
+    <div>
+      <div class="field-label">Titre</div>
+      <div style="border:1px solid #EAEAEA; border-radius:14px; padding:13px 14px; background:#FFFFFF;">
+        <input type="text" placeholder="Ex. Appeler le dentiste" style="border:none; outline:none; width:100%; font-size:14px; background:transparent; color:#171717;">
+      </div>
+    </div>
+
+    <div>
+      <div class="field-label">Description <span style="color:#A8A8A8; font-weight:500;">(optionnelle)</span></div>
+      <div style="border:1px solid #EAEAEA; border-radius:14px; padding:13px 14px; background:#FFFFFF;">
+        <textarea placeholder="Ajouter des détails…" style="border:none; outline:none; width:100%; height:56px; font-size:14px; background:transparent; color:#171717; resize:none;"></textarea>
+      </div>
+    </div>
+
+    <div style="display:flex; gap:12px;">
+      <div style="flex:1;">
+        <div class="field-label">Date</div>
+        <div style="display:flex; align-items:center; gap:8px; border:1px solid #EAEAEA; border-radius:14px; padding:12px 12px; background:#FFFFFF;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span style="font-size:13.5px; font-weight:600;">Demain</span>
+        </div>
+      </div>
+      <div style="flex:1;">
+        <div class="field-label">Heure</div>
+        <div style="display:flex; align-items:center; gap:8px; border:1px solid #EAEAEA; border-radius:14px; padding:12px 12px; background:#FFFFFF;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <span style="font-size:13.5px; font-weight:600;">14:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="field-label">Priorité</div>
+      <div style="display:flex; gap:8px;">
+        <div class="chip">Faible</div>
+        <div class="chip" style="background:#EAF2FE; border-color:#3B82F6; color:#3B82F6;">Moyen</div>
+        <div class="chip">Élevé</div>
+        <div class="chip">Critique</div>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between; border:1px solid #EAEAEA; border-radius:14px; padding:13px 14px; background:#FFFFFF;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+        <span style="font-size:14px; font-weight:600;">Récurrence</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:6px; color:#6B6B6B;">
+        <span style="font-size:13px;">Aucune</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between; border:1px solid #EAEAEA; border-radius:14px; padding:13px 14px; background:#FFFFFF;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span style="font-size:14px; font-weight:600;">Rappel</span>
+      </div>
+      <div style="width:44px; height:26px; border-radius:999px; background:#FF7A00; position:relative;">
+        <div style="width:20px; height:20px; border-radius:50%; background:#FFFFFF; position:absolute; top:3px; right:3px;"></div>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:10px; background:#FFF1E6; border-radius:14px; padding:12px 14px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF7A00" style="flex-shrink:0;"><path d="M12 2l1.8 5.6L19.4 9.4 13.8 11.2 12 17 10.2 11.2 4.6 9.4 10.2 7.6 12 2z"/></svg>
+      <div style="flex:1; font-size:12.5px; color:#E85D00; line-height:1.4;">TRiXX peut te proposer un créneau libre pour cette tâche.</div>
+      <div style="font-size:12px; font-weight:700; color:#E85D00; white-space:nowrap;">Proposer</div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

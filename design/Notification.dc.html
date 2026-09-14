@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .frame {
+      width: 390px; height: 844px; position: relative; overflow: hidden;
+      border-radius: 32px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(165deg, #3a2a1f 0%, #1c1712 55%, #100d0a 100%);
+      color: #FFFFFF;
+    }
+  </style>
+</helmet>
+
+<div class="frame">
+  <!-- lock screen clock -->
+  <div style="padding-top:64px; text-align:center;">
+    <div style="font-size:56px; font-weight:300; letter-spacing:-1px;">14:00</div>
+    <div style="font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); margin-top:2px;">Lundi 29 juin</div>
+  </div>
+
+  <!-- active notification -->
+  <div style="margin:36px 16px 0; background:rgba(255,255,255,0.96); border-radius:20px; overflow:hidden; box-shadow:0 20px 40px -12px rgba(0,0,0,0.5);">
+    <div style="display:flex; align-items:center; gap:9px; padding:14px 16px 0;">
+      <div style="width:20px; height:20px; border-radius:6px; background:#FFF1E6; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg viewBox="0 0 160 160" width="16" height="16">
+          <path d="M56 78 C40 45 46 10 78 14 C92 42 90 70 74 86 Z" fill="#FF7A00"/>
+          <path d="M104 78 C120 45 114 10 82 14 C68 42 70 70 86 86 Z" fill="#FF7A00"/>
+          <circle cx="80" cy="86" r="52" fill="#FF7A00"/>
+          <ellipse cx="80" cy="104" rx="31" ry="23" fill="#FFF6EC"/>
+          <ellipse cx="64" cy="80" rx="6.4" ry="8.2" fill="#171717"/>
+          <ellipse cx="96" cy="80" rx="6.4" ry="8.2" fill="#171717"/>
+          <path d="M80 96 Q84 100 80 103 Q76 100 80 96 Z" fill="#171717"/>
+        </svg>
+      </div>
+      <span style="font-size:12px; font-weight:700; color:#171717;">TRiXX</span>
+      <span style="font-size:12px; color:#6B6B6B;">·</span>
+      <span style="font-size:12px; color:#6B6B6B;">maintenant</span>
+      <div style="flex:1;"></div>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </div>
+
+    <div style="padding:10px 16px 14px;">
+      <div style="font-size:14.5px; font-weight:700; color:#171717;">Rappel : Appeler le dentiste</div>
+      <div style="font-size:13px; color:#4A4A4A; margin-top:4px; line-height:1.4;">Prévu aujourd'hui à 14:00 · priorité Moyenne</div>
+    </div>
+
+    <div style="display:flex; border-top:1px solid #EEEEEE;">
+      <div style="flex:1; text-align:center; padding:12px 4px; font-size:12.5px; font-weight:700; color:#22A06B; border-right:1px solid #EEEEEE;">Marquer comme fait</div>
+      <div style="flex:1; text-align:center; padding:12px 4px; font-size:12.5px; font-weight:700; color:#E85D00; border-right:1px solid #EEEEEE;">Reporter 30 min</div>
+      <div style="flex:1; text-align:center; padding:12px 4px; font-size:12.5px; font-weight:700; color:#6B6B6B;">Ignorer</div>
+    </div>
+  </div>
+
+  <!-- collapsed group stub for realism -->
+  <div style="margin:10px 16px 0; background:rgba(255,255,255,0.10); border-radius:16px; padding:10px 16px; display:flex; align-items:center; gap:9px;">
+    <div style="width:16px; height:16px; border-radius:5px; background:rgba(255,255,255,0.4); flex-shrink:0;"></div>
+    <span style="font-size:12px; color:rgba(255,255,255,0.7);">1 autre notification de TRiXX</span>
+  </div>
+
+  <div style="position:absolute; left:0; right:0; bottom:40px; text-align:center; font-size:12px; font-weight:600; color:rgba(255,255,255,0.55); letter-spacing:0.5px;">GLISSER VERS LE HAUT POUR OUVRIR</div>
+</div>
+</x-dc>
+</body>
+</html>

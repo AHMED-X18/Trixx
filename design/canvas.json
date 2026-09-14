@@ -1,0 +1,28 @@
+{
+  "artboards": [
+    { "file": "Splash.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "Splash" },
+    { "file": "Login.dc.html", "x": 470, "y": 0, "w": 390, "h": 844, "title": "Connexion" },
+    { "file": "Onboarding.dc.html", "x": 940, "y": 0, "w": 390, "h": 844, "title": "Inscription" },
+
+    { "file": "Main.dc.html", "x": 0, "y": 964, "w": 390, "h": 844, "title": "Aujourd'hui" },
+    { "file": "Chat.dc.html", "x": 470, "y": 964, "w": 390, "h": 844, "title": "Chat" },
+    { "file": "Planning.dc.html", "x": 940, "y": 964, "w": 390, "h": 844, "title": "Planning" },
+
+    { "file": "TaskDetail.dc.html", "x": 0, "y": 1928, "w": 390, "h": 844, "title": "Détail de tâche" },
+    { "file": "TaskCreate.dc.html", "x": 470, "y": 1928, "w": 390, "h": 844, "title": "Nouvelle tâche" },
+    { "file": "Notification.dc.html", "x": 940, "y": 1928, "w": 390, "h": 844, "title": "Notification" },
+    { "file": "Profile.dc.html", "x": 1410, "y": 1928, "w": 390, "h": 844, "title": "Personnalisation" },
+
+    { "file": "DarkMode.dc.html", "x": 0, "y": 2892, "w": 900, "h": 924, "title": "Mode sombre" },
+
+    { "file": "FoxAvatar.dc.html", "x": 0, "y": 3936, "w": 980, "h": 560, "title": "Mascotte" }
+  ],
+  "annotations": [
+    { "id": "row-onboarding", "x": 0, "y": -40, "w": 400, "text": "Onboarding & connexion" },
+    { "id": "row-core", "x": 0, "y": 924, "w": 400, "text": "Coeur de l'application" },
+    { "id": "row-tasks", "x": 0, "y": 1888, "w": 500, "text": "Tâches & système" },
+    { "id": "row-dark", "x": 0, "y": 2852, "w": 400, "text": "Mode sombre" },
+    { "id": "row-mascot", "x": 0, "y": 3896, "w": 500, "text": "Mascotte — le renard TRiXX" }
+  ],
+  "launch": { "view": "canvas" }
+}
